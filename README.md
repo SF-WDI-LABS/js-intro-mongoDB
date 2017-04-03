@@ -44,10 +44,10 @@ Let's do a quick activity and get Mongoose and Mongo setup on our machines.
     mongoose.connect('mongodb://localhost/todo-app-demo');
   ```
   
-    <details>
-      <summary>What's a connection string?</summary>
+ What's a connection string?
+ 
       `mongodb://localhost/todo-app-demo` is a string formatted by specifications provided by the Mongoose package in order to connect to a MongoDB database on your local system named `todo-app-demo`. You can name it whatever you like and it will be created as soon as you save some data to it.
-    </details>
+
 
 3. Finally, we need to run the MongodDB service. Generally you will want it open in a separate tab, running in the background.
 
@@ -81,8 +81,7 @@ Once you've finished the above steps, here's how you would set up an Express app
   └── server.js
   ```
 
-2. <details>
-  <summary>In your model file (e.g. `todo.js`), create the model **schema**, and export it so that you can require it in other parts of your app.</summary>
+2.
   ```js
   var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
@@ -96,16 +95,15 @@ Once you've finished the above steps, here's how you would set up an Express app
 
   module.exports = Todo;
   ```
-</details>
 
-3. <details>
-  <summary>In `server.js`, require your model.</summary>
+
+3. In `server.js`, require your model.
   ```js
   // server.js
   // Note without requiring your models you can't use them in server.js!
   var Todo = require('./models/todo');
   ```
-</details>
+
 
 
 
