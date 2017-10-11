@@ -228,6 +228,7 @@ Notice that mongo has added an `_id` and `__v` attributes.
 <details>
   <summary>
   We've seen the `new` keyword before! It creates new instances of an object. We use it here to create new instances of our `Todo` model. We then call `.save()` to store the new todo in our database.</summary>
+  
   ```js
   // create new todo
   app.post('/api/todos', function todosCreate(req, res) {
@@ -240,12 +241,14 @@ Notice that mongo has added an `_id` and `__v` attributes.
     });
   });
   ```
+  
 </details>
 
 #### Get one todo: `.findOne()`
 
 <details>
   <summary>We can use <a href="http://mongoosejs.com/docs/api.html#query_Query-findOne">.findOne()</a> to return the first document in the collection that matches certain criteria. In this case, we're looking for a todo that has a certain `_id`.</summary>
+  
   ```js
   // get one todo
   app.get('/api/todos/:id', function (req, res) {
@@ -266,6 +269,7 @@ Notice that mongo has added an `_id` and `__v` attributes.
 
 <details>
   <summary>Similar to the last example, we can use `.findOne()` to find the document with a certain `_id`. After updating the document, we use `.save()` to persist our changes to the database.</summary>
+  
   ```js
   // update todo
   app.put('/api/todos/:id', function (req, res) {
@@ -285,12 +289,14 @@ Notice that mongo has added an `_id` and `__v` attributes.
     });
   });
   ```
+  
 </details>
 
 #### Delete todo: `.findOneAndRemove()`
 
 <details>
   <summary>The <a href="http://mongoosejs.com/docs/api.html#model_Model.findOneAndRemove" target="_blank">.findOneAndRemove()</a> method takes care of finding the document with a certain `_id` and removing it from the database.</summary>
+  
   ```js
   // delete todo
   app.delete('/api/todos/:id', function (req, res) {
@@ -303,6 +309,7 @@ Notice that mongo has added an `_id` and `__v` attributes.
     });
   });
   ```
+  
   **Note:** Another way to remove the document is by finding the document first (using `.findOne()` or  `.findById()`) and calling <a href="http://mongoosejs.com/docs/api.html#model_Model.remove" target="_blank">`.remove()`</a>.
 </details>
 
