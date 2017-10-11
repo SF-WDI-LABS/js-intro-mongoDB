@@ -208,6 +208,7 @@ Notice that mongo has added an `_id` and `__v` attributes.
 
 <details>
   <summary>We can use <a href="http://mongoosejs.com/docs/api.html#model_Model.find"  target="_blank">.find()</a> to get all documents in the collection.</summary>
+  
   ```js
   // get all todos
   app.get('/api/todos', function todosIndex(req, res) {
@@ -217,6 +218,7 @@ Notice that mongo has added an `_id` and `__v` attributes.
     });
   });
   ```
+  
 
   **Note:** We can also use `.find()` to get a specific set of documents in the collection (rather than ALL documents) by setting conditions. Read more <a href="http://mongoosejs.com/docs/api.html#model_Model.find"  target="_blank">in the docs</a>.
 </details>
