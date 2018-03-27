@@ -46,7 +46,7 @@ Let's do a quick activity and get Mongoose and Mongo setup on our machines.
   
  What's a connection string?
  
-      `mongodb://localhost/todo-app-demo` is a string formatted by specifications provided by the Mongoose package in order to connect to a MongoDB database on your local system named `todo-app-demo`. You can name it whatever you like and it will be created as soon as you save some data to it.
+`mongodb://localhost/todo-app-demo` is a string formatted by specifications provided by the Mongoose package in order to connect to a MongoDB database on your local system named `todo-app-demo`. You can name it whatever you like and it will be created as soon as you save some data to it.
 
 
 3. Finally, we need to run the MongodDB service. Generally you will want it open in a separate tab, running in the background.
