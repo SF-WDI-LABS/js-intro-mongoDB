@@ -55,9 +55,9 @@ Let's do a quick activity and get Mongoose and Mongo setup on our machines.
     mongod
   ```
   
-    **Note:** If you already have an instance of MongoDB running, you'll get an error at this step. If that's the case, you can move on to the next step, since MongoDB is already running!
+**Note:** If you already have an instance of MongoDB running, you'll get an error at this step. If that's the case, you can move on to the next step, since MongoDB is already running!
 
-Running your MongoDB service is no different from running your Express Server!
+Running your MongoDB service is no different from running your Express server! `nodemon` runs your back-end server; `mongod` runs your MongoDB database.
 
 ## Express/MongoDB Integration
 Once you've finished the above steps, here's how you would set up an Express application with a "Todo" model (so we can start CRUDing todos!).
